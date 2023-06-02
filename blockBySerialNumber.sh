@@ -1,5 +1,9 @@
 #!/bin/bash
-blockedSN=(SN1 SN2 SN3 C02ZV2HWMD6M SN4 SN5)
+
+# Using this script you can preform an action for each "serial"
+# The variable can of course be anything, in this example it's a serial.
+
+blockedSN=(SN1 SN2 SN3 SN4 SN5 SN6)
 SerialNumber=$(ioreg -c IOPlatformExpertDevice -d 2 | awk -F\" '/IOPlatformSerialNumber/{print $(NF-1)}')
 serialFOUND=0
 for E in ${blockedSN[@]}
