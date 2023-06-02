@@ -1,1 +1,3 @@
 # public
+
+Just a collection of stuff that might be useful to others...
